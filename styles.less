@@ -1,0 +1,114 @@
+@color-purple: purple;
+@color-white: white;
+@color-gray: gray;
+@color-black: black;
+@color-red: red;
+@color-green: green;
+@color-blue: blue;
+@color-basic: #cce8cf; 
+
+.wrap{
+  color: @color-purple;
+}
+h1{
+  color: @color-purple;
+}
+
+.transform-rotate(@deg: 45deg){
+  -webkit-transform: rotate(@deg);
+     -moz-transform: rotate(@deg);
+      -ms-transform: rotate(@deg);
+       -o-transform: rotate(@deg);
+          transform: rotate(@deg);
+}
+.hh{ background-color: @color-basic; height: 250px; text-align: center; padding: 0; margin: 0; border: 1px solid @color-black; padding-top: 50px; }
+.hh li{ display: inline-block; width: 100px; height: 100px; list-style: none outside; margin: 0 50px; }
+.hh li:first-child{
+  .transform-rotate;
+  color: @color-white;
+  background-color: @color-green;
+}
+.hh li:nth-child(2){
+  .transform-rotate(30deg);
+  color: @color-white;
+  background-color: @color-blue;
+}
+.hh li:nth-child(3){
+  .transform-rotate(-30deg);
+  color: @color-white;
+  background-color: @color-red;
+}
+.hh li:nth-child(4){
+  .transform-rotate(60deg);
+  color: @color-white;
+  background-color: @color-gray;
+}
+.hh li:last-child{
+  .transform-rotate(-45deg);
+  color: @color-white;
+  background-color: @color-purple;
+}
+
+.wrap{
+  color: @color-black;
+  h3{
+    font: 30px 'Microsoft YaHei';
+  }
+  p{
+    font: 20px '黑体';
+    a{
+      color: @color-purple;
+      &:hover{
+        color: @color-green;
+      }
+    }
+  }
+}
+
+@base-color: #111;
+@the-border: 1px; 
+@red: #842210;
+.fun{
+  color: (@base-color * 3);
+  border: (@the-border * 3) solid (@red + #003300);
+  p{
+    color: (@base-color + #003300);
+    border: (@the-border * 3) solid desaturate(@red, 80%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
